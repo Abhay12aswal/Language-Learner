@@ -28,6 +28,7 @@ const generateMCQ = (
 
 export const translateWords = async (params: LangType): Promise<WordType[]> => {
   try {
+    //@ts-ignore
     const words: { Text: string }[] = generate(8).map((i: string) => ({
       Text: i,
     }));
